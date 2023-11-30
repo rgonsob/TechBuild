@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home - TechBuild</title>
+		<link rel="icon" type="image/x-icon" href="../assets/favicon.svg" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+		/>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<div class="container">
+		
+					<a class="navbar-brand" href="/frontend/html/index.html">Home</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarTop" aria-controls="navBarTop" aria-expanded="false">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+		
+					<div class="collapse navbar-collapse" id="navBarTop">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" href="/frontend/html/index.html">Productos</a>
+							</li>
+		
+							<li class="nav-item">
+								<a class="nav-link" href="/frontend/html/1.html" target="_blank">Configurar PC</a>
+							</li>
+						</ul>
+		
+						<div class="col d-flex justify-content-center">
+						  <div class="input-group w-75">
+							<span class="input-group-text">
+							  <i class="bi bi-search"></i>
+							</span>
+							<input
+							  type="text"
+							  class="form-control"
+							  placeholder="Buscar"
+							/>
+						  </div>
+						</div>
+		
+						<a href="/frontend/html/carrito.html" class="btn btn-primary btn-sm me-2">
+							<i class="fas fa-shopping-cart"></i> Carrito <span id="num_cart" class="badge bg-secondary">0</span>
+						</a>
+		
+						<a href="/frontend/html/login.html" class="btn btn-success btn-sm"><i class="fas fa-user"></i> Ingresar</a>
+		
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main class="container-fluid pt-1 px-5">
+			<div
+				class="text-center d-flex flex-row align-items-center justify-content-center mb-3"
+			>
+				<h1 class="mx-3">Bienvenido a TechBuild</h1>
+				<span class="mx-3">
+					<i class="bi bi-pc-display" style="font-size: 6rem; color: orangered"></i>
+				</span>
+			</div>
+
+			<div class="input-group w-100 mb-5">
+				<span class="input-group-text">
+					<i class="bi bi-search"></i>
+				</span>
+				<input
+					style="text-align: center"
+					type="text"
+					class="form-control"
+					placeholder="Buscar producto"
+				/>
+			</div>
+
+			<div
+				class="featured-container container-fluid d-flex flex-column justify-content-around mb-5"
+			>
+				<h5>Productos destacados</h5>
+				<div class="d-flex flex-row justify-content-around">
+					<div class="card" style="width: 18rem">
+						<img
+							src="https://assetsio.reedpopcdn.com/Nvidia-GeForce-RTX-4070-Ti-MSI-Suprim-X-12G-(3).JPG?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp"
+							class="card-img-top"
+							alt="..."
+						/>
+						<div class="card-body">
+							<h5 class="card-title">
+								Nvidia GeForce RTX 4070 Ti
+							</h5>
+							<p class="card-text">$1024.00 USD</p>
+							<a href="#" class="btn btn-primary w-100"
+								>Agregar</a
+							>
+						</div>
+					</div>
+					<div class="card" style="width: 18rem">
+						<img
+							src="https://assetsio.reedpopcdn.com/Nvidia-GeForce-RTX-4070-Ti-MSI-Suprim-X-12G-(3).JPG?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp"
+							class="card-img-top"
+							alt="..."
+						/>
+						<div class="card-body">
+							<h5 class="card-title">
+								Nvidia GeForce RTX 4070 Ti
+							</h5>
+							<p class="card-text">$1024.00 USD</p>
+							<a href="#" class="btn btn-primary w-100"
+								>Agregar</a
+							>
+						</div>
+					</div>
+					<div class="card" style="width: 18rem">
+						<img
+							src="https://assetsio.reedpopcdn.com/Nvidia-GeForce-RTX-4070-Ti-MSI-Suprim-X-12G-(3).JPG?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp"
+							class="card-img-top"
+							alt="..."
+						/>
+						<div class="card-body">
+							<h5 class="card-title">
+								Nvidia GeForce RTX 4070 Ti
+							</h5>
+							<p class="card-text">$1024.00 USD</p>
+							<a href="#" class="btn btn-primary w-100"
+								>Agregar</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div
+				class="onsale-container container-fluid d-flex flex-column justify-content-around mb-5"
+			>
+				<h5>Productos con descuento</h5>
+				<div class="d-flex flex-row justify-content-around">
+					<div class="card" style="width: 18rem">
+						<img
+							src="https://cdn.thewirecutter.com/wp-content/media/2022/11/24inchmonitors-2048px-9977-3x2-1.jpg"
+							class="card-img-top"
+							alt="..."
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Asus ProArt PA248CNV</h5>
+							<p class="card-text">$1024.00 USD</p>
+							<a href="#" class="btn btn-primary w-100"
+								>Agregar</a
+							>
+						</div>
+					</div>
+					<div class="card" style="width: 18rem">
+						<img
+							src="https://cdn.thewirecutter.com/wp-content/media/2022/11/24inchmonitors-2048px-9977-3x2-1.jpg"
+							class="card-img-top"
+							alt="..."
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Asus ProArt PA248CNV</h5>
+							<p class="card-text">$1024.00 USD</p>
+							<a href="#" class="btn btn-primary w-100"
+								>Agregar</a
+							>
+						</div>
+					</div>
+					<div class="card" style="width: 18rem">
+						<img
+							src="https://cdn.thewirecutter.com/wp-content/media/2022/11/24inchmonitors-2048px-9977-3x2-1.jpg"
+							class="card-img-top"
+							alt="..."
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Asus ProArt PA248CNV</h5>
+							<p class="card-text">$1024.00 USD</p>
+							<a href="#" class="btn btn-primary w-100"
+								>Agregar</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script>
+			let cantidadCarrito = 0;
+		  
+			document.querySelectorAll('.btn').forEach(function (btn) {
+			  btn.addEventListener('click', function () {
+				// Incrementa la cantidad al hacer clic en el botón de agregar
+				cantidadCarrito++;
+		  
+				// Actualiza el contenido del elemento de cantidad en la barra de navegación
+				document.getElementById('cantidadNav').innerText = cantidadCarrito;
+		  
+				// Agrega una clase de animación al carrito en la barra de navegación
+				document.getElementById('carritoNav').classList.add('animated');
+		  
+				// Elimina la clase de animación después de un tiempo (500ms en este caso)
+				setTimeout(function () {
+				  document.getElementById('carritoNav').classList.remove('animated');
+				}, 500);
+			  });
+			});
+		  </script>
+		  
+		  
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

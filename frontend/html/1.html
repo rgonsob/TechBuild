@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configura tu PC | TechBuild</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.svg" />
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/frontend/html/index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarTop" aria-controls="navBarTop" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navBarTop">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/frontend/html/index.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/frontend/html/configure.html" target="_blank">Configurar PC</a>
+                        </li>
+                    </ul>
+                    <div class="col d-flex justify-content-center">
+                        <div class="input-group w-75">
+                            <span class="input-group-text">
+                                <i class="bi bi-search"></i>
+                            </span>
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Buscar"
+                            />
+                        </div>
+                    </div>
+                    <a href="/frontend/html/carrito.html" class="btn btn-primary btn-sm me-2">
+                        <i class="fas fa-shopping-cart"></i> Carrito <span id="num_cart" class="badge bg-secondary">0</span>
+                    </a>
+                    <a href="/frontend/html/login.html" class="btn btn-success btn-sm"><i class="fas fa-user"></i> Ingresar</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main">
+        <section>
+            <div class="container">
+                <div class="row wrapper-top pb-3">
+                    <div class="col">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-9">
+                                <div class="row">
+                                    <div class="col">
+                                        <h2 class="title-primary-1 h1 detail-bottom detail-red text-uppercase position-relative space">
+                                            <span class="text-primary font-weight-bold">1.</span>
+                                            Marca del procesador
+                                        </h2>
+                                    </div>
+                                    <div class="col-12 col-sm mb-3 mb-sm-0 cpr-custom-controls text-center text-sm-right align-self-center"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <div class="cpr-gallery" id="cpr_catalog">
+                                    <div class="cpr-column px-2 px-md-3 mb-3 mb-md-5">
+                                        <div class="card-item-simple bg-white text-center mb-2 mb-md-3">
+                                            <img alt="Intel" class="img-fluid d-block mx-auto mb-3" title="Intel" src="https://coregaming.com.mx/assets/uploads/intel.png?1615526286"/>
+                                            <div class="name-btn-wrapper mb-2">
+                                                <h3 class="mb-0 name">Intel                                                </h3>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group btn-block d-none d-sm-flex" role="group" aria-label="Basic example">
+                                            <a title="Intel" class="btn btn-primary text-uppercase processor-brand" data-brand="intel" role="button" href="/frontend/html/Personaliza-tu-pc/Procesadores/I2.html">
+                                                <i class="fas fa-check fa-fw mr-1"></i>
+                                                Seleccionar
+                                            </a>
+                                        </div>
+                                        <div class="btn-group-vertical btn-block d-flex d-sm-none" role="group" aria-label="Basic example">
+                                            <a title="Intel" class="btn btn-primary text-uppercase processor-brand" data-brand="intel" role="button" href="/frontend/html/Personaliza-tu-pc/Procesadores/I2.html">
+                                                <i class="fas fa-check fa-fw mr-1"></i>
+                                                Seleccionar
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="cpr-column px-2 px-md-3 mb-3 mb-md-5">
+                                        <div class="card-item-simple bg-white text-center mb-2 mb-md-3">
+                                            <img alt="AMD" class="img-fluid d-block mx-auto mb-3" title="AMD" src="https://coregaming.com.mx/assets/uploads/amd.png?1615526309"/>
+                                            <div class="name-btn-wrapper mb-2">
+                                                <h3 class="mb-0 name">AMD                                                </h3>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group btn-block d-none d-sm-flex" role="group" aria-label="Basic example">
+                                            <a title="AMD" class="btn btn-primary text-uppercase processor-brand" data-brand="amd" role="button" href="/frontend/html/Personaliza-tu-pc/Procesadores/A2.html">
+                                                <i class="fas fa-check fa-fw mr-1"></i>
+                                                Seleccionar
+                                            </a>
+                                        </div>
+                                        <div class="btn-group-vertical btn-block d-flex d-sm-none" role="group" aria-label="Basic example">
+                                            <a title="AMD" class="btn btn-primary text-uppercase processor-brand" data-brand="amd" role="button" href="/frontend/html/Personaliza-tu-pc/Procesadores/A2.html">
+                                                <i class="fas fa-check fa-fw mr-1"></i>
+                                                Seleccionar
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <aside class="col-lg-3">
+                                <div class="card border-top-0 border-left-0 border-right-0">
+                                    <div class="card-header bg-dark-gray text-center py-3">
+                                        <p class="h5 text-white text-uppercase mb-0">
+                                            Llevas hasta ahora 
+                                            <span class="d-block h2 mt-1">
+                                                $<span class="current-total">0.00 MXN</span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text font-weight-bold">¡Haz tu computadora por piezas o PC a la carta!</p>
+                                        <p class="card-text text-gray">Utiliza nuestro configurador para hacer tu PC a medida. Sólo tienes que elegir los componentes y el sistema te mostrará el precio final.</p>
+                                        <hr>
+                                        <h5 class="card-title text-uppercase font-weight-bold">Progreso</h5>
+                                        <ol class="pl-4 text-gray mb-0">
+                                            <li class="mb-2 text-primary font-weight-bold">Tipo de procesador</li>
+                                            <li class="mb-2">Procesador</li>
+                                            <li class="mb-2">Tarjeta madre</li>
+                                            <li class="mb-2">Disipador</li>
+                                            <li class="mb-2">Memoria RAM</li>
+                                            <li class="mb-2">Memoria RAM extra</li>
+                                            <li class="mb-2">Tarjeta de video</li>
+                                            <li class="mb-2">Almacenamiento</li>
+                                            <li class="mb-2">Almacenamiento extra</li>
+                                            <li class="mb-2">Gabinete</li>
+                                            <li class="mb-2">Fuente de poder</li>
+                                            <li class="mb-2">Ensamblado</li>
+                                            <li>Resumen</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+></script>
+
+</body>
+</html>
