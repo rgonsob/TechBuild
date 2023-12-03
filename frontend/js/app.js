@@ -101,40 +101,6 @@
 	}
 
 	/*=======================================
-	ESTABLECE EL DISIPADOR
-	=========================================*/
-	if($('.heatsink').length > 0) {
-
-		// SI HAY UN CLICK
-		$('.heatsink').click(function(){
-
-			// SE OBTIENEN LOS VALORES
-			var url      = $('#url-location').data('url');
-			var heatsink = $(this).data('heatsink');
-			var $this    = $(this);
-
-			// SE MANDA EL AJAX
-			$.ajax({
-				type:     'get',
-				dataType: 'json',
-				url:      url + 'ajax/pc_set_heatsink.json',
-				data:     'heatsink=' + heatsink,
-				success:  function(response)
-				{
-					// SI SE EJECUTO CORRECTAMENTE EL AJAX
-					if(response.msg == 'ok')
-					{
-						// SE REDIRECCIONA AL PASO 5
-						window.location.assign($this.attr('href'));
-					}
-				}
-			});//AJAX
-
-			return false;
-		});
-	}
-
-	/*=======================================
 	ESTABLECE LA MEMORIA RAM
 	=========================================*/
 	if($('.ram').length > 0) {
@@ -159,40 +125,6 @@
 					if(response.msg == 'ok')
 					{
 						// SE REDIRECCIONA AL PASO 6
-						window.location.assign($this.attr('href'));
-					}
-				}
-			});//AJAX
-
-			return false;
-		});
-	}
-
-	/*=======================================
-	ESTABLECE LA MEMORIA RAM EXTRA
-	=========================================*/
-	if($('.ram_extra').length > 0) {
-
-		// SI HAY UN CLICK
-		$('.ram_extra').click(function(){
-
-			// SE OBTIENEN LOS VALORES
-			var url       = $('#url-location').data('url');
-			var ram_extra = $(this).data('ram_extra');
-			var $this     = $(this);
-
-			// SE MANDA EL AJAX
-			$.ajax({
-				type:     'get',
-				dataType: 'json',
-				url:      url + 'ajax/pc_set_ram_extra.json',
-				data:     'ram_extra=' + ram_extra,
-				success:  function(response)
-				{
-					// SI SE EJECUTO CORRECTAMENTE EL AJAX
-					if(response.msg == 'ok')
-					{
-						// SE REDIRECCIONA AL PASO 7
 						window.location.assign($this.attr('href'));
 					}
 				}
@@ -261,40 +193,6 @@
 					if(response.msg == 'ok')
 					{
 						// SE REDIRECCIONA AL PASO 9
-						window.location.assign($this.attr('href'));
-					}
-				}
-			});//AJAX
-
-			return false;
-		});
-	}
-
-	/*=======================================
-	ESTABLECE EL ALMACENAMIENTO EXTRA
-	=========================================*/
-	if($('.storage_extra').length > 0) {
-
-		// SI HAY UN CLICK
-		$('.storage_extra').click(function(){
-
-			// SE OBTIENEN LOS VALORES
-			var url           = $('#url-location').data('url');
-			var storage_extra = $(this).data('storage_extra');
-			var $this         = $(this);
-
-			// SE MANDA EL AJAX
-			$.ajax({
-				type:     'get',
-				dataType: 'json',
-				url:      url + 'ajax/pc_set_storage_extra.json',
-				data:     'storage_extra=' + storage_extra,
-				success:  function(response)
-				{
-					// SI SE EJECUTO CORRECTAMENTE EL AJAX
-					if(response.msg == 'ok')
-					{
-						// SE REDIRECCIONA AL PASO 10
 						window.location.assign($this.attr('href'));
 					}
 				}
@@ -398,75 +296,6 @@
 					{
 						// SE REDIRECCIONA AL PASO 13
 						window.location.assign($this.attr('href'));
-					}
-				}
-			});//AJAX
-
-			return false;
-		});
-	}
-
-	/*=======================================
-	TIPO DE ENVIO
-	=========================================*/
-	if($('#type_delivery').length > 0) {
-
-		// SI CAMBIA EL TIPO DE ENVIO
-		$('#type_delivery').change(function(){
-
-			// SE OBTIENEN LOS VALORES
-			var url           = $('#url-location').data('url');
-			var type_delivery = $(this).val();
-			var parcels_opts  = '';
-
-			// SE MANDA EL AJAX
-			$.ajax({
-				type:     'post',
-				dataType: 'json',
-				url:      url + 'ajax/type_delivery.json',
-				data:     'type_delivery=' + type_delivery,
-				success:  function(response)
-				{
-					// SI SE EJECUTO CORRECTAMENTE EL AJAX
-					if(response.msg == 'ok')
-					{
-						// SE ACTUALIZAN LOS TOTALES
-						$('.total-shipping-price').html(response.shipping);
-						$('.total-price').html(response.total);
-
-						// SE RECORRE OPCION POR OPCION
-						$.each(response.parcels_opts, function(key, value) {
-							// SI LA OPCION ES LA SELECCIONADA
-							if(key == response.parcel_id) {
-								var sel = 'selected';
-							}
-							else {
-								var sel = '';
-							}
-
-							parcels_opts += '<option value="' + key + '" ' + sel + '>' + value + '</option>';
-						});
-
-						// SE ACTUALIZAN LAS OPCIONES
-						$('#parcel').html(parcels_opts);
-
-						// SI NO HAY OPCIONES DE ENVIO
-						if(response.parcels_opts.length == 0)
-						{
-							// SE OCULTA LOS DIVS
-							$('#parcel-options').hide();
-							$('#shipping-insurance-sidebar').hide();
-							$('#total-shipping-insurance').hide();
-
-							// SE DESLECCIONA EL CHECKBOX
-							$('#form_shipping_insurance').prop('checked', false);
-						}
-						else
-						{
-							// SE MUESTRA LOS DIVS
-							$('#parcel-options').show();
-							$('#shipping-insurance-sidebar').show();
-						}
 					}
 				}
 			});//AJAX
